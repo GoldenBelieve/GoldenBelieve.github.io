@@ -1,140 +1,102 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سایت سرمایه‌گذاری / Investment Site</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #001f3f; /* رنگ آبی تیره */
-            color: black; /* رنگ متن سیاه */
-        }
-        header {
-            background-color: rgba(0, 123, 255, 0.7);
-            padding: 10px 20px;
-            text-align: center;
-        }
-        .tabs {
-            display: flex;
-            justify-content: center;
-            margin: 20px 0;
-        }
-        .tab {
-            padding: 10px 20px;
-            cursor: pointer;
-            background-color: rgba(255, 255, 255, 0.8);
-            border: 1px solid rgba(0, 123, 255, 0.8);
-            border-radius: 5px;
-            margin: 0 5px;
-            transition: background-color 0.3s;
-        }
-        .tab:hover {
-            background-color: rgba(0, 123, 255, 0.9);
-            color: white;
-        }
-        .content {
-            display: none;
-            padding: 20px;
-            border: 1px solid rgba(0, 123, 255, 0.8);
-            border-radius: 5px;
-            background-color: rgba(255, 255, 255, 0.9);
-            margin: 0 20px;
-        }
-        .active {
-            display: block;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: rgba(0, 123, 255, 0.7);
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-        .login-container {
-            text-align: center;
-            margin: 20px;
-        }
-        .login-container input {
-            padding: 10px;
-            margin: 5px;
-            border: 1px solid #007bff;
-            border-radius: 5px;
-        }
-        .login-container button {
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .login-container button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <title>Your Investment Company</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <h1>Your Investment Company</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#client-portal">Client Portal</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-    <h1>شرکت سرمایه‌گذاری / Investment Company</h1>
-</header>
+    <main>
+        <section id="hero">
+            <h2>Invest with Confidence</h2>
+            <p>Your path to financial growth starts here.</p>
+            <a href="#contact" class="cta-button">Get Started</a>
+        </section>
 
-<div class="tabs">
-    <div class="tab" onclick="showTab('aboutUs')">درباره ما / About Us</div>
-    <div class="tab" onclick="showTab('projects')">پروژه‌ها / Projects</div>
-    <div class="tab" onclick="showTab('contactUs')">تماس با ما / Contact Us</div>
-    <div class="tab" onclick="showTab('login')">ورود / Login</div>
-</div>
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service">
+                <h3>Investment Strategies</h3>
+                <p>We offer a range of investment strategies tailored to your goals.</p>
+            </div>
+            <div class="service">
+                <h3>Financial Products</h3>
+                <p>Explore our diverse range of financial products to suit your needs.</p>
+            </div>
+        </section>
 
-<div id="aboutUs" class="content active">
-    <h2>درباره ما / About Us</h2>
-    <p>ما یک شرکت پیشرو در زمینه سرمایه‌گذاری هستیم که بر ارائه بازده عالی به مشتریان خود تمرکز داریم. تیم با تجربه ما به اتخاذ تصمیمات سرمایه‌گذاری هوشمندانه متعهد است.</p>
-    <p>We are a leading investment company focused on delivering excellent returns to our clients. Our experienced team is committed to making smart investment decisions.</p>
-</div>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are committed to providing exceptional investment services.</p>
+        </section>
 
-<div id="projects" class="content">
-    <h2>پروژه‌ها / Projects</h2>
-    <p>پروژه‌های ما شامل بخش‌های مختلفی از جمله املاک، فناوری و انرژی‌های تجدیدپذیر است. ما تلاش می‌کنیم در سرمایه‌گذاری‌های پایدار و سودآور فعالیت کنیم.</p>
-    <p>Our projects cover various sectors including real estate, technology, and renewable energy. We strive to engage in sustainable and profitable investments.</p>
-</div>
+        <section id="resources">
+            <h2>Educational Resources</h2>
+            <ul>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">Webinars</a></li>
+            </ul>
+        </section>
 
-<div id="contactUs" class="content">
-    <h2>تماس با ما / Contact Us</h2>
-    <p>اگر سوالی دارید یا می‌خواهید در مورد فرصت‌های سرمایه‌گذاری صحبت کنید، لطفاً با ما تماس بگیرید:</p>
-    <p>ایمیل: info@investmentcompany.com</p>
-    <p>تلفن: (123) 456-7890</p>
-    <p>If you have any questions or want to discuss investment opportunities, please contact us:</p>
-    <p>Email: info@investmentcompany.com</p>
-    <p>Phone: (123) 456-7890</p>
-</div>
+        <section id="testimonials">
+            <h2>What Our Clients Say</h2>
+            <blockquote>
+                <p>"The best investment advice I’ve ever received!"</p>
+                <cite>- Happy Client</cite>
+            </blockquote>
+        </section>
 
-<div id="login" class="content">
-    <h2>ورود / Login</h2>
-    <div class="login-container">
-        <input type="text" placeholder="نام کاربری / Username" required>
-        <input type="password" placeholder="رمز عبور / Password" required>
-        <br>
-        <button type="submit">ورود / Login</button>
-    </div>
-</div>
+        <section id="client-portal">
+            <h2>Client Portal</h2>
+            <p>Access your account, view performance metrics, and download reports.</p>
+            <a href="#" class="cta-button">Login</a>
+        </section>
 
-<footer>
-    <p>&copy; 2024 شرکت سرمایه‌گذاری. کلیه حقوق محفوظ است. / &copy; 2024 Investment Company. All rights reserved.</p>
-</footer>
+        <section id="blog">
+            <h2>Latest Insights</h2>
+            <article>
+                <h3><a href="#">Market Trends: What to Watch This Quarter</a></h3>
+                <p>Stay informed about the latest market trends...</p>
+            </article>
+        </section>
 
-<script>
-    function showTab(tabId) {
-        const contents = document.querySelectorAll('.content');
-        contents.forEach(content => {
-            content.classList.remove('active');
-        });
-        document.getElementById(tabId).classList.add('active');
-    }
-</script>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Have questions? We're here to help!</p>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <p>Email: support@yourinvestmentcompany.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+        </section>
+    </main>
 
+    <footer>
+        <p>&copy; 2024 Your Investment Company. All rights reserved.</p>
+        <p>Privacy Policy | Terms of Service</p>
+    </footer>
 </body>
 </html>
